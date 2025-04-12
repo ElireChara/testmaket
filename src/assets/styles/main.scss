@@ -1,3 +1,9 @@
-@import './tailwind.scss';
+@use './tailwind.scss';
 
-// Тут пишем свои кастомные стили при необходимости
+.back {
+    background-image:
+        linear-gradient(180deg, rgba(14, 59, 129, 0.6) 0%, rgba(50, 128, 172, 0.222) 79.02%),
+        linear-gradient(0deg, #3262AC, #3262AC);
+    width: 1920px;
+    height: 800px;
+}
