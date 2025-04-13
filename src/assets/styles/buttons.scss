@@ -1,0 +1,28 @@
+.button1 {
+    color: #ffffff;
+    font-family: Inter;
+
+    &:hover {
+        color: #61e835;
+    }
+}
+
+.button-feed {
+    color: #c7c7c7b8;
+    font-family: Inter;
+    border-bottom: 2px dotted #c7c7c7d8;
+
+    &:hover {
+        color: #61e835;
+    }
+}
+
+.button2 {
+    width: 155px;
+    height: 52px;
+    gap: 8px;
+    border-radius: 100px;
+    padding-right: 32px;
+    padding-left: 32px;
+    background: #76B72A;
+}

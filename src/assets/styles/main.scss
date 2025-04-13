@@ -1,9 +1,37 @@
 @use './tailwind.scss';
+@use './buttons.scss';
+@use './fonts.scss';
 
-.back {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section1 {
     background-image:
-        linear-gradient(180deg, rgba(14, 59, 129, 0.6) 0%, rgba(50, 128, 172, 0.222) 79.02%),
-        linear-gradient(0deg, #3262AC, #3262AC);
+    linear-gradient(180deg, rgba(14, 59, 129, 0.3) 0%, rgba(50, 128, 172, 0.4) 79.02%),
+    linear-gradient(0deg, rgba(50, 98, 172, 0.85), rgba(50, 98, 172, 0.85)),
+    url("/src/assets/images/test34.jpeg");
     width: 1920px;
     height: 800px;
+
+}
+
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/src/assets/styles/fonts/web/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: Clip1;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/src/assets/styles/fonts/web/Clip-Condensed.woff2") format("woff2");
 }
