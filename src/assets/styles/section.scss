@@ -9,6 +9,7 @@
     background-position: right bottom;
     width: 1920px;
     height: 800px;
+    overflow: hidden;
 }
 
 .el1 {
@@ -27,16 +28,16 @@
 
 }
 
-.elementscroll1 {
+.el3 {
     width: 285px;
     height: 404px;
     top: 654px;
     left: 975px;
-    border-radius: 40px; 
+    border-radius: 40px;
     background-color: #B7FFB6;
 }
 
-.elementscroll2 {
+.el4 {
     width: 285px;
     height: 404px;
     top: 566px;
@@ -45,7 +46,11 @@
     background-color: #FFE2B6;
 }
 
+
 .section2 {
+    margin-top: 3%;
+    margin-left: 18%;
+    margin-right: 18%;
     width: 1920px;
     height: 800px;
 }

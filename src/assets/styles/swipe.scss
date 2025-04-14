@@ -1,0 +1,12 @@
+.swiper {
+    padding: 2rem 0;
+  }
+  
+  .swiper-slide {
+    transition: transform 0.3s ease;
+  }
+  
+  .swiper-slide:hover {
+    transform: translateY(-10px);
+  }
+  

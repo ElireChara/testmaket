@@ -45,17 +45,52 @@
                 <div><span>Одно из ведущих предприятий промышленности <br> Республики Адыгея</span></div>
                 <button class="button2 my-[42px]">Подробнее</button>
             </div>
-            <div class="grid grid-cols-2 grid-rows-2 gap-6">
-                <div class="el1"> <img src="/src/assets/images/1.svg"></div>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="el1 animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000"> <img
+                        src="/src/assets/images/1.svg"></div>
                 <div class="el2"> <img src="/src/assets/images/2.svg"></div>
-                <div class="elementscroll1"> <img src="/src/assets/images/3.svg"></div>
-                <div class="elementscroll2"> <img src="/src/assets/images/4.svg"></div>
+                <div class="el3 animate-on-scroll opacity-0 translate-y-10 transition-all duration-1000"> <img
+                        src="/src/assets/images/3.svg"></div>
+                <div class="el4"> <img src="/src/assets/images/4.svg"></div>
             </div>
         </div>
     </header>
     <main>
+        <div class="section2">
+            <button class="Clip2">Популярные линейки ></button>
+            <!-- index.html -->
+            <div class="swiper productSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Слайд 1 -->
+                    <div class="swiper-slide flex flex-col items-center text-center px-4">
+                        <img src="./assets/images/1.svg" class="mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Творог</h3>
+                        <p class="text-sm text-gray-600 mb-4">Улучшает жировой обмен, профилактика заболеваний...</p>
+                        <button class="button3">Смотреть каталог</button>
+                    </div>
 
+                    <!-- Слайд 2 -->
+                    <div class="swiper-slide flex flex-col items-center text-center px-4">
+                        <img src="./assets/images/2.svg"  class="mb-4">
+                        <h3>Айран</h3>
+                        <p class="text-sm text-gray-600 mb-4">Стимулирует пищеварение...</p>
+                        <button class="button3">Смотреть каталог</button>
+                    </div>
+
+                    <!-- добавь свои слайды -->
+                </div>
+
+                <!-- Стрелки -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+
+        </div>
     </main>
+
+
+
     <footer>
 
     </footer>
