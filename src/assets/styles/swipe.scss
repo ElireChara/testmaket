@@ -2,22 +2,26 @@
   margin-left: 18%;
   margin-right: 18%;
   width: 100%;
+  margin-top: 35px;
 }
 
 .custom-nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  align-items: center;
 }
 
 .custom-button {
-  background-color: #007aff;
-  color: white;
+  width: 82px;
+  height: 82px;
+  background-color: #ffffff;
+  color: #1C1C1C80;
+  font-family: Clip;
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 36px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .swiper-slide {
   width: 284px;
