@@ -12,14 +12,8 @@ const swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: true,
     },
-    breakpoints: {
-      320: { slidesPerView: 1 },
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
   });
 
-  // Кастомная навигация
   document.querySelector(".prev-btn").addEventListener("click", () => {
     swiper.slidePrev();
   });
