@@ -67,14 +67,14 @@
         linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%),
         url("/src/assets/images/backgr.svg");
     background-repeat: no-repeat;
-    background-position: 
-    calc(75% - 150px) bottom,
-    right bottom,
-    calc(75% + 80px) bottom,
-    right bottom,
-    center,
-    center,
-    center;
+    background-position:
+        calc(75% - 150px) bottom,
+        right bottom,
+        calc(75% + 80px) bottom,
+        right bottom,
+        center,
+        center,
+        center;
     height: 800px;
     margin-left: 1%;
     margin-right: 1%;
