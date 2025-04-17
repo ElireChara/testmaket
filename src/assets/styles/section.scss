@@ -68,13 +68,15 @@
         url("/src/assets/images/backgr.svg");
     background-repeat: no-repeat;
     background-position: 
+    calc(75% - 150px) bottom,
+    right bottom,
     calc(75% + 80px) bottom,
     right bottom,
-    calc(75% + 80px) bottom;
+    center,
+    center,
+    center;
     height: 800px;
     margin-left: 2%;
     margin-right: 2%;
     border-radius: 60px;
-
-
 }
