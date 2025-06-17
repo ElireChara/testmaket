@@ -1,0 +1,176 @@
+@use 'fonts' as *;
+.section-header {
+    background-image:
+        url("/src/assets/images/Union.svg"),
+        url("/src/assets/images/Vector.svg"),
+        linear-gradient(180deg, rgba(14, 59, 129, 0.3) 0%, rgba(50, 128, 172, 0.4) 79.02%),
+        linear-gradient(0deg, rgba(50, 98, 172, 0.85), rgba(50, 98, 172, 0.85)),
+        url("/src/assets/images/test34.jpeg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    width: 1920px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    img {
+        margin-left: 18%;
+    }
+
+    .nav-buttons {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        .catalog-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #1a365d;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+
+            svg {
+                width: 1rem;
+                height: 1rem;
+                fill: none;
+                stroke: currentColor;
+                stroke-width: 2;
+            }
+
+            .badge {
+                background-color: white;
+                color: black;
+                font-size: 0.875rem;
+                font-weight: 500;
+                border-radius: 9999px;
+                padding: 0.125rem 0.5rem;
+            }
+        }
+
+        .nav-button {
+            color: #ffffff;
+            font-family: Inter;
+
+            &:hover {
+                color: #61e835;
+            }
+        }
+    }
+
+    .contacts {
+        margin-right: 18%;
+        display: grid;
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+
+        .phone-button {
+            color: #c7c7c7b8;
+            font-family: Inter;
+
+            &:hover {
+                color: #61e835;
+            }
+        }
+
+        .feedback-button {
+            color: #c7c7c7b8;
+            font-family: Inter;
+            border-bottom: 2px dotted #c7c7c7d8;
+
+            &:hover {
+                color: #61e835;
+            }
+        }
+    }
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: 18%;
+    margin-right: 18%;
+
+    .text-section {
+        margin-top: 18%;
+
+        .title {
+            margin: 1.5rem 0;
+
+            .Hilight {
+                @extend .Clip1;
+                font-size: 3rem;
+                line-height: 1;
+                
+            }
+        }
+
+        .description {
+            // стили для описания
+        }
+
+        .more-button {
+            margin: 2.5rem 0;
+            width: 155px;
+            height: 52px;
+            gap: 8px;
+            border-radius: 100px;
+            padding-right: 32px;
+            padding-left: 32px;
+            background: #76B72A;
+        }
+    }
+
+    .images-section {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+
+        .left-column {
+            margin-top: 25%;
+            display: grid;
+
+            .image1 {
+                width: 285px;
+                height: 404px;
+                top: 220px;
+                left: 975px;
+            }
+
+            .image3 {
+                margin-top: 10%;
+                width: 285px;
+                height: 404px;
+                top: 654px;
+                left: 975px;
+                border-radius: 40px;
+                background-color: #B7FFB6;
+            }
+        }
+
+        .right-column {
+            .image2 {
+                width: 285px;
+                height: 404px;
+                top: 132px;
+                left: 1290px;
+            }
+
+            .image4 {
+                margin-top: 10%;
+                width: 285px;
+                height: 404px;
+                top: 566px;
+                left: 1290px;
+                border-radius: 40px;
+                background-color: #FFE2B6;
+            }
+        }
+    }
+}
