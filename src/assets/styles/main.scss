@@ -1,12 +1,14 @@
 @use './tailwind.scss';
-@use './buttons.scss';
 @use './fonts.scss';
-@use './section.scss';
+@use './footer.scss';
 @use './swipe.scss';
 @use './Header.scss';
 @use './popular.scss';
 @use './inform.scss';
 @use './contakts.scss';
+@use './map.scss';
+@use './sellhits.scss';
+@use './geo.scss';
 
 body {
     margin: 0;

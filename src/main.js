@@ -1,8 +1,7 @@
-import './assets/styles/main.scss';
 import Swiper, {navigation}  from 'swiper';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
-
+import './assets/styles/main.scss';
 
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
@@ -23,23 +22,25 @@ const swiper = new Swiper(".mySwiper", {
   });
 
 
-  // const secondSwiper = new Swiper(".secondSwiper", {
-  //   slidesPerView: 4,
-  //   spaceBetween: 30,
-  //   loop: true,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,}
+  const hitsSwiper = new Swiper(".hitsSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    loop: true,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,}
 
-  // });
+  });
 
-  // document.querySelector(".prev-btn2").addEventListener("click", () => {
-  //   swiper.slidePrev();
-  // });
+  document.querySelector(".hits-prev-btn").addEventListener("click", () => {
+    hitsSwiper.slidePrev();
+  });
 
-  // document.querySelector(".next-btn2").addEventListener("click", () => {
-  //   swiper.slideNext();
-  // });
+  document.querySelector(".hits-next-btn").addEventListener("click", () => {
+    hitsSwiper.slideNext();
+  });
+
 
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();

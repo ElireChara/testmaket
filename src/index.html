@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ЗАО Молокомбинат "Адыгейский"</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                 <div class="title">
                     <span class="Clip1">ЗАО «Молкомбинат <br> «Адыгейский»</span>
                 </div>
-                <div class="description">
+                <div>
                     <span>Одно из ведущих предприятий промышленности <br> Республики Адыгея</span>
                 </div>
                 <button class="more-button">Подробнее</button>
@@ -148,9 +149,77 @@
         </div>
 
 
+        <div class="hits">
+            <button class="Clip2">Хиты продаж ></button>
+
+            <div class="swiper hitsSwiper">
+                <div class="custom-nav-hits swiper-hits">
+                    <button class="custom-button hits-prev-btn pointer-events-auto">←</button>
+                    <button class="custom-button hits-next-btn pointer-events-auto">→</button>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide hits-slide">
+                        <div class="product-card">
+                            <img src="/src/assets/images/smetana.svg">
+                            <span>Сметана</span>
+                            <span class="Slider">Сметана 20%</span>
+                            <span>Упаковка: 300гр</span>
+                            <p class="Slider1">Срок годности: 14 дней</p>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-slide hits-slide">
+                        <div class="product-card">
+                            <img src="/src/assets/images/tvorog.svg">
+                            <span>Творог</span>
+                            <span class="Slider">Творог обезжиренный</span>
+                            <span>Упаковка: 170 г</span>
+                            <p class="Slider1">Срок годности: 10 суток</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hits-slide">
+                        <div class="product-card">
+                            <img src="/src/assets/images/maslo.svg">
+                            <span>Масло сливочное</span>
+                            <span class="Slider">Масло сливочное</span>
+                            <span>Упаковка: 170 г</span>
+                            <p class="Slider1">Срок годности: 120 суток</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hits-slide">
+                        <div class="product-card">
+                            <img src="/src/assets/images/moloko.svg">
+                            <span>Молоко</span>
+                            <span class="Slider">Молоко 2,5%</span>
+                            <span>Упаковка: 300гр</span>
+                            <p class="Slider1">Срок годности: 14 дней</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-geo">
+            <div class="main-content-geo">
+                <div class="title">
+                    <span class="Clip1">География продаж</span>
+                </div>
+                <div class="text-section">
+                    <span>Вы сможете наши продукты в таких регионах: Астраханская <br>
+                        область, Ростовская область, Ставропольский край, <br>
+                        Республика Кабардино-Балкария, Республика <br>
+                        Северная Осетия-Алания, Волгоградская область</span>
+                </div>
+                <button class="more-button-geo">Узнать подробнее</button>
+            </div>
+        </div>
+
+
         <section class="contact-section">
             <span class="Clip2">Контакты</span>
-
             <div class="contacts-container">
                 <div class="form-box1">
                     <h2>Свяжитесь с нами</h2>
@@ -210,19 +279,19 @@
             </div>
         </section>
 
-        <div id="map" class="section6 width: 100%">
+        <div id="map" class="mapya">
             <script
                 src="https://api-maps.yandex.ru/2.1/?apikey=7ad66c0d-0999-4b09-aeee-9e6964e7ac6d&lang=ru_RU"></script>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="container ml-[18%] px-4 py-8">
-            <div class="grid grid-cols-1 md:grid-cols-4">
-                <div>
-                    <img src="/src/assets/images/logo.svg" class="mb-4">
-                    <span class="Clip3 mb-6 flex flex-col">ЗАО «Молкомбинат «Адыгейский»</span>
-                    <span class="Slider1 mt-5">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__column">
+                    <img src="/src/assets/images/logo.svg" class="footer__logo">
+                    <span class="Clip3 footer__company-name">ЗАО «Молкомбинат «Адыгейский»</span>
+                    <span class="Slider1 footer__description">
                         Мы готовы предложить вам традиционные продукты
                         под торговой маркой «Майкетская молочная продукция»:
                         молоко, кефир, сметана, творог, ряженец, айран, которые
@@ -230,9 +299,9 @@
                     </span>
                 </div>
 
-                <div class="flex flex-col ml-5">
-                    <span class="Clip3 mb-4">НАВИГАЦИЯ</span>
-                    <div class="flex flex-col ">
+                <div class="footer__column footer__navigation">
+                    <span class="Clip3 footer__title">НАВИГАЦИЯ</span>
+                    <div class="footer__links">
                         <a href="#" class="button1">Главная</a>
                         <a href="#" class="button1">Каталог</a>
                         <a href="#" class="button1">О заводе</a>
@@ -242,9 +311,9 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col">
-                    <span class="Clip3 mb-4">ПРОДУКЦИЯ</span>
-                    <div class="grid grid-cols-1 gap-2">
+                <div class="footer__column">
+                    <span class="Clip3 footer__title">ПРОДУКЦИЯ</span>
+                    <div class="footer__products">
                         <a href="#" class="button1">Айран</a>
                         <a href="#" class="button1">Мацони</a>
                         <a href="#" class="button1">Сыры</a>
@@ -252,22 +321,22 @@
                         <a href="#" class="button1">Кефир</a>
                         <a href="#" class="button1">Ряженка</a>
                     </div>
-                    <a href="#" class="button1 mt-4">Смотреть всё</a>
+                    <a href="#" class="button1 footer__view-all">Смотреть всё</a>
                 </div>
 
-                <div class="flex flex-col">
-                    <span class="Clip3 mb-4">КОНТАКТЫ</span>
-                    <div class="flex flex-col gap-4">
-                        <div>
+                <div class="footer__column">
+                    <span class="Clip3 footer__title">КОНТАКТЫ</span>
+                    <div class="footer__contacts">
+                        <div class="footer__contact-group">
                             <span>Адрес</span>
                             <p>г. Майкоп, ул. Транспортная, 5</p>
                         </div>
-                        <div>
+                        <div class="footer__contact-group">
                             <span>Приемная</span>
                             <p>+7 (8772) 53-68-73</p>
                             <p>info@molkom-adyg.ru</p>
                         </div>
-                        <div>
+                        <div class="footer__contact-group">
                             <span>Отдел продаж</span>
                             <p>+7 (8772) 56-95-20</p>
                             <p>+7 (8772) 53-06-46</p>
@@ -278,6 +347,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
