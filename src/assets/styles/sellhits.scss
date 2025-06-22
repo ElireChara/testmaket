@@ -6,10 +6,37 @@
     text-align: left;
     overflow: hidden;
 
+    @media (max-width: 1440px) {
+        padding: 0 12%;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 0 8%;
+        margin-top: 4%;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 5%;
+        margin-top: 6%;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 3%;
+        margin-top: 8%;
+    }
+
     .hitsSwiper {
         width: 100%;
         margin-top: 35px;
         position: relative;
+
+        @media (max-width: 1024px) {
+            margin-top: 25px;
+        }
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
 
         .swiper-wrapper {
             display: flex;
@@ -30,6 +57,10 @@
         height: auto;
         align-items: center;
         overflow: visible;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
 
         button {
             pointer-events: auto;
@@ -71,6 +102,14 @@
             width: 100%;
             text-align: left;
 
+            @media (max-width: 1024px) {
+                padding: 20px 15px;
+            }
+
+            @media (max-width: 768px) {
+                padding: 15px 10px;
+            }
+
             &:hover {
                 background-color: #fcfcfc;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -80,9 +119,12 @@
             }
 
             img {
-
                 margin: 0 auto 20px;
                 object-fit: contain;
+
+                @media (max-width: 768px) {
+                    margin-bottom: 15px;
+                }
             }
 
             span {
@@ -92,11 +134,19 @@
                 font-size: 16px;
                 text-align: left;
 
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
+
                 &.Slider {
                     text-align: left;
                     font-weight: bold;
                     font-size: 18px;
                     color: #222;
+
+                    @media (max-width: 768px) {
+                        font-size: 16px;
+                    }
                 }
             }
 
@@ -106,10 +156,10 @@
                 font-size: 14px;
                 line-height: 1.5;
 
-
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                }
             }
-
-
         }
     }
 }
